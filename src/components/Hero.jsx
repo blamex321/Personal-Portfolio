@@ -5,7 +5,7 @@ import { Typewriter } from "react-simple-typewriter";
 const Hero = () => {
   const downloadResume = () => {
     saveAs(
-      "https://firebasestorage.googleapis.com/v0/b/portfolio-project-26502.appspot.com/o/Laxman_Resume%20(3).pdf?alt=media&token=f86b943d-319d-4603-b9fd-bd7a4393ce18",
+      process.env.REACT_APP_RESUME_LINK,
       "Laxman Bankupalle Resume.pdf"
     );
   };
@@ -50,7 +50,7 @@ const Hero = () => {
           <img
             className="object-cover object-center rounded-full bg-[#3351DB]"
             alt="hero"
-            src="https://firebasestorage.googleapis.com/v0/b/portfolio-project-26502.appspot.com/o/CTeam%20Members%20Instagram%20Post_20231030_113129_0000.png?alt=media&token=90f699f5-a40e-46be-8f1d-0dfdfcbd3dbc"
+            src={process.env.REACT_APP_PROFILE_PICTURE}
           />
         </div>
       </div>
