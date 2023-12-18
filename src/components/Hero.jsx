@@ -1,7 +1,15 @@
+import { saveAs } from "file-saver";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
 
 const Hero = () => {
+  const downloadResume = () => {
+    saveAs(
+      "https://firebasestorage.googleapis.com/v0/b/portfolio-project-26502.appspot.com/o/Laxman_Resume%20(3).pdf?alt=media&token=f86b943d-319d-4603-b9fd-bd7a4393ce18",
+      "Laxman Bankupalle Resume.pdf"
+    );
+  };
+
   return (
     <section className="text-gray-400 body-font">
       <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
@@ -27,10 +35,13 @@ const Hero = () => {
             hexagon try-hard chambray.
           </p>
           <div className="flex justify-center">
-            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg" >
+            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
               Hire Me
             </button>
-            <button className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg">
+            <button
+              className="ml-4 inline-flex text-gray-400 bg-gray-800 border-0 py-2 px-6 focus:outline-none hover:bg-gray-700 hover:text-white rounded text-lg"
+              onClick={downloadResume}
+            >
               My Resume
             </button>
           </div>
