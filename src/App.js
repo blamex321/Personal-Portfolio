@@ -10,6 +10,8 @@ import MoveToTop from "./Components/MoveToTop";
 import Lottie from  "lottie-react";
 import nightsky from "./LottieFiles/night-sky.json";
 import HashLoader from "react-spinners/HashLoader";
+import electron from "./LottieFiles/electron.json"
+import AppleLike from "./LottieFiles/apple-like.json"
 
 
 function App() {
@@ -38,9 +40,9 @@ function App() {
       ):(
       <div>
       
-      <Lottie className="bg" animationData={nightsky} loop={true} />  
-      <Lottie className="bgtwo" animationData={nightsky} loop={true} />   
-      <Lottie className="bgtemp" animationData={nightsky} loop={true} /> 
+      {/* <Lottie className="bg" animationData={electron} loop={true} />   */}
+      {/* <Lottie className="bgtwo" animationData={electron} loop={true} />    */}
+      <Lottie className="bgtemp" animationData={AppleLike} loop={true} /> 
 
       <Nav/>
       <MoveToTop/>

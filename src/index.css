@@ -9,7 +9,6 @@
   position: relative;
   overflow-x: hidden;
   -webkit-tap-highlight-color: transparent;
-  background-color: #E7E7E7;
 }
 
 .loader{
@@ -22,7 +21,7 @@
 body{
   font-family: 'Raleway', sans-serif;
   background-color: #031926;
-  color:#01111a;
+  color:white;
   min-height: 100vh;
 }
 
@@ -112,7 +111,7 @@ b{
 }
 
 .NavbarLinks a{
-  color:#01111a;
+  color:white;
   display:flex;
   align-items: center;
   justify-content: space-between;
@@ -124,10 +123,10 @@ b{
 }
 
 .NavbarLinks a:hover{
-  color: black;
+  color: white;
 }
 .NavbarLinks a::after{
-  background-color: #01111a;
+  background-color: white;
   content: "";
   position: absolute;
   height: 3px;
