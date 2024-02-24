@@ -1,11 +1,12 @@
 import React from "react";
 import Lottie from "lottie-react";
-import SpaceBoy from "../LottieFiles/SpaceBoy.json";
-import WavingGuy from "../LottieFiles/wavingGuy.json";
 import Typed from "./Typed.js";
 import Tilt from "react-parallax-tilt";
 import Avatar from "../images/Avatar.png";
 import { CiCoffeeCup } from "react-icons/ci";
+import boyAnimation from '../LottieFiles/boyAnimation.json'
+
+
 
 const Home = () => {
   return (
@@ -21,7 +22,7 @@ const Home = () => {
 
         <Lottie
           className="illustration"
-          animationData={WavingGuy}
+          animationData={boyAnimation}
           loop={true}
         />
       </div>
